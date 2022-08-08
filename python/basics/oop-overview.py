@@ -27,3 +27,7 @@ print(type(bo))
 #
 # 4. Polymorphism: different object classes can share names (albeit, the
 #   functionality may differ).
+
+
+# Python allows for Introspection. dir() lists all available methods and attributes.
+print(dir(bo))
