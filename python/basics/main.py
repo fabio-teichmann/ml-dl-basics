@@ -11,8 +11,11 @@ import shopping.shopping_cart  # access module within package
 # print(modules.multiply(2, 10))
 # print(shopping.shopping_cart.buy('apple'))
 
-def do_stuff(num):
+def do_stuff(num=0):
     try:
-        return num + 5
+        if num is None:
+            return 'please enter number'
+        else:
+            return int(num) + 5
     except ValueError as err:
         return err
